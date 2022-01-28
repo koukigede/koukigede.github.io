@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jq/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="jq/jquery-ui.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stayle.css">
+    <title>Sarana Akomodasi</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script type="text/javascript">
+		$(function(){
+			$("#ddalogku").dialog({
+				autoOpen:false,
+					show:'blind',
+					hide:'explode'
+			});
+			$('#jelajah').click(function(){
+				$('#ddalogku').dialog('open');
+				return false;
+			});
+		});
+
+      $(document).ready(function(){
+			$("#tabs").tabs();
+		});
+</script>
+</head>
+<body>
+  
+<div class="container-fluid"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="icon.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+        Pantai Pandawa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Objek Wisata.html">Objek Wisata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sarana Akomodasi.html">Akomodasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Wawasan.html">Wawasan</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Search</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">terimakasih Sudah mengunjungi Website Saya</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Mohon maaf keyword atau kata pencarian anda tidak ditemukan pada website Kami. <br> silakan dipreksa dan diketik dengan baik-baik
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <!---carausel-->
+
+  <section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="foto3.jpeg" class="gambar" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Pantai Pandawa</h1>
+          <p>Some representative placeholder content for the first slide.</p>
+          <button type="button" class="btn btn-primary bte-lg">video</button>
+          <button type="button" class="btn btn-secondary bte-lg" id="jelajah">jelajahi</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="laut.jpg" class="gambar" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Pantai Pandawa</h1>
+          <p>Some representative placeholder content for the second slide.</p>
+          <button type="button" class="btn btn-primary bte-lg">video</button>
+          <button type="button" class="btn btn-secondary bte-lg" id="jelajah">jelajahi</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="foto4.jpg" class="gambar" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Pantai Pandawa</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+          <button type="button" class="btn btn-primary btn-lg">video</button>
+          <button type="button" class="btn btn-secondary bte-lg" id="jelajah">jelajahi</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<div id="ddalogku">
+    <h3>PV Pantai Pandawa</h3>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/ltCYouPOizU" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+  
+   <br>
+   <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Hotel</a></li>
+      <li><a href="#tabs-2">Restran</a></li>
+      <li><a href="#tabs-3">Fasilitas lain</a></li>
+    </ul>
+    <div id="tabs-1">
+      <br>
+      <h3 align="center" id="akomodasi">Hotel</h3>
+      <br>
+      <div class="container-fluid">
+        <div align="center" class="row">
+          <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="hotel 1.jpg" class="card-img-top" height="150" width="250" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pandawa Hill resort</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">800m dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="hotel 2.jpg" class="card-img-top" height="150" width="250" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">puri Pandawa resort</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">1km dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="hotel 3.jpg" class="card-img-top" height="150" width="250" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Umah Pandawa hotel and Villas</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">2.5km dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="hotel 1.jpg" class="card-img-top" height="150" width="250" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pandawa Hill resort</h5>
+            <img src="icon/image/star-fill.svg" width="30px" height="30px">
+            <img src="icon/image/star-fill.svg" width="30px" height="30px">
+            <img src="icon/image/star-fill.svg" width="30px" height="30px">
+            <img src="icon/image/star-fill.svg" width="30px" height="30px">
+            <img src="icon/image/star-half.svg" width="30px" height="30px">
+             <br>
+            <p class="card-text">800m dari pantai pandawa.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="hotel 2.jpg" class="card-img-top" height="150" width="250" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">puri Pandawa resort</h5>
+              <img src="icon/image/star-fill.svg" width="30px" height="30px">
+              <img src="icon/image/star-fill.svg" width="30px" height="30px">
+              <img src="icon/image/star-fill.svg" width="30px" height="30px">
+              <img src="icon/image/star-fill.svg" width="30px" height="30px">
+              <img src="icon/image/star-half.svg" width="30px" height="30px">
+               <br>
+              <p class="card-text">1km dari pantai pandawa.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="hotel 3.jpg" class="card-img-top" height="150" width="250" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Umah Pandawa hotel and Villas</h5>
+                <img src="icon/image/star-fill.svg" width="30px" height="30px">
+                <img src="icon/image/star-fill.svg" width="30px" height="30px">
+                <img src="icon/image/star-fill.svg" width="30px" height="30px">
+                <img src="icon/image/star-fill.svg" width="30px" height="30px">
+                <img src="icon/image/star-half.svg" width="30px" height="30px">
+                 <br>
+                <p class="card-text">2.5km dari pantai pandawa.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+      </div>
+      </div>
+    </div>
+    <div id="tabs-2">
+      <br>
+      <h3 align="center" id="akomodasi">Restran</h3>
+      <br>
+      <div class="container-fluid">
+        <div align="center" class="row">
+          <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="mesari.jpg" class="card-img-top" alt="..." width="350" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Warung MERTA MESARI</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">250m dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="roosterfish.jpg" class="card-img-top" alt="..." width="350" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Roosterfish Beach Club</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">450m dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="Pandawa Breeze.jpg" class="card-img-top" alt="..." width="350" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Pandawa Breeze</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">100m dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div id="tabs-3">
+      <br>
+      <h3 align="center" id="akomodasi">Fasilitas lain</h3>
+      <br>
+      <div class="container-fluid">
+        <div align="center" class="row">
+          <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="marinn.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pandawa <br> Marine Park</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">130m dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="timbis.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TIMBIS FLYING SITE <br> BALI</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">3km dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="golf.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bukit Pandawa Golf & Country Club</h5>
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-fill.svg" width="30px" height="30px">
+          <img src="icon/image/star-half.svg" width="30px" height="30px">
+           <br>
+          <p class="card-text">4km dari pantai pandawa.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Progressbar -->
+  <div class="container" style="background-color: #a2d9ff;">
+  <p id="kunjungan" class="display-4" style="text-align:center; 
+  background-color: #a2d9ff;">Kunjungan Wisatawan</p>
+  <div class="progress" >
+  <label class="h6">Amerika : </label>
+   <div class="progress-bar progress-bar-striped progress-baranimated bg-danger" role="progressbar" aria-valuenow="35" aria-valuemin="0" 
+  aria-valuemax="100" style="width: 35%">35%</div>
+  </div>
+  <br>
+  <div class="progress">
+  <label class="h6">Australia : </label>
+   <div class="progress-bar progress-bar-striped progress-baranimated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" 
+  aria-valuemax="100" style="width: 85%">85%</div>
+  </div>
+  <br>
+  <div class="progress">
+  <label class="h6">China : </label>
+   <div class="progress-bar progress-bar-striped progress-baranimated bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" 
+  aria-valuemax="100" style="width: 70%">70%</div>
+  </div>
+  <br>
+  <div class="progress">
+  <label class="h6">Eropa : </label>
+   <div class="progress-bar progress-bar-striped progress-baranimated bg-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" 
+  aria-valuemax="100" style="width: 45%">45%</div>
+  </div>
+  <br>
+  </div>
+  <br>
+  <!-- End Progressbar -->
+  <br>
+  <hr>
+  <div align="center" class="footer" style="background-color: black;">
+    <b style="color: white;">CopyRight 2020 Desain Web By : </b> <a href="">Developer</a>
+    </div>
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  </body>
+  </html>
